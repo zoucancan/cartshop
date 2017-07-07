@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th><input type="checkbox" class="check-all check">全选</th>
+          <th>商品</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>小计</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td class="checkbox">
+              <input type="checkbox" class="check-one check">
+            </td>
+            <td class="goods">
+              <img style="width: 50px;height: 50px"src="https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=4043796179,1070455512&fm=85&s=7AD1E70A562426BE1CD503BF03008026" alt="">
+              <span>Casio</span>
+            </td>
+            <td class="prices">2899</td>
+            <td class="count">
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count-input">
+              <span class="add">+</span>
+            </td>
+            <td class="subtotal">2899</td>
+            <td class="opration"><span class="delete">删除</span></td>
+          </tr>
+        <tr>
+            <td class="checkbox">
+              <input type="checkbox" class="check-one check">
+            </td>
+            <td class="goods">
+              <img style="width: 50px;height: 50px"src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=78144918,3429661602&fm=117&gp=0.jpg" alt="">
+              <span>Casio</span>
+            </td>
+            <td class="prices">7999</td>
+            <td class="count">
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count-input">
+              <span class="add">+</span>
+            </td>
+            <td class="subtotal">7999</td>
+            <td class="opration"><span class="delete">删除</span></td>
+          </tr>
+        <tr>
+            <td class="checkbox">
+              <input type="checkbox" class="check-one check">
+            </td>
+            <td class="goods">
+              <img style="width: 50px;height: 50px"src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1899788530,2266796784&fm=117&gp=0.jpg" alt="">
+              <span>Casio</span>
+            </td>
+            <td class="prices">6890</td>
+            <td class="count">
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count-input">
+              <span class="add">+</span>
+            </td>
+            <td class="subtotal">6890</td>
+            <td class="opration"><span class="delete">删除</span></td>
+          </tr>
+      </tbody>
+    </table>
+    <div class="foot" id="foot">
+      <label for="" class="fl select-all">
+        <input type="checkbox" class="check-all check">全选
+      </label>
+      <span href="" class="fl delete" id="deleteAll">删除</span>
+      <div class="fr closing">结算</div>
+      <div class="fr total">合计:$ <span id="priceTotal">0.00</span></div>
+      <div class="fr selected" id="selected">已选商品
+        <span id="selectedAll">0</span>件
+        <span class="arrow up">︽</span>
+        <span class="arrow down">︾</span>
+      </div>
+      <div class="selected-view">
+        <div id="selectedViewList" class="clearfix"></div>
+        <!-- <span class="arrow">*<span>*</span></span> -->
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
